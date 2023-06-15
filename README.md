@@ -1,37 +1,14 @@
 Documentation de l'API
 
-Bienvenue dans la documentation de l'API locale !
+## Documentation
 
-Accès à l'API
-Pour accéder à l'API en local, suivez les étapes ci-dessous :
+La documentation complète de l'API est disponible sur [Postman](https://documenter.getpostman.com/view/27995725/2s93sgXqt8). Elle fournit des informations détaillées sur chaque point d'accès, les paramètres attendus, les réponses renvoyées, et des exemples d'utilisation.
 
-1- Assurez-vous d'avoir Node.js installé sur votre machine. Si ce n'est pas le cas, vous pouvez le télécharger et l'installer à partir du site officiel de Node.js.
+## Hébergement
 
-2-Clonez le référentiel de l'API depuis le dépôt distant en utilisant la commande suivante dans votre terminal :
+L'API Vente Occasion est hébergée sur [https://api-vente-occasion.onrender.com/](https://api-vente-occasion.onrender.com/). Vous pouvez y accéder pour utiliser les fonctionnalités de l'API en ligne.
 
-git clone <lien-du-repo>
+## Exécution locale
 
-3-Accédez au répertoire de l'API en utilisant la commande suivante :
+Si vous souhaitez exécuter l'API localement, vous pouvez le faire en la démarrant sur `localhost:3000`. Assurez-vous d'avoir les dépendances nécessaires installées et de configurer correctement votre environnement avant de lancer l'API en local.
 
-cd api-vente-occasion
-4- Installez les dépendances en exécutant la commande suivante :
-
-npm install
-
-5- Renommez le fichier .env.example en .env et configurez les variables d'environnement nécessaires, telles que l'URL de la base de données, les clés d'API, etc.
-
-6- Démarrez le serveur de développement en utilisant la commande suivante :
-
-npm start
-
-7-L'API sera maintenant accessible à l'adresse http://localhost:3000. Vous pouvez envoyer des requêtes à cette URL en utilisant des outils tels que Postman pour tester les différentes fonctionnalités de l'API.
-
-Documentation des endpoints
-Pour obtenir la documentation complète des endpoints disponibles dans cette API, vous pouvez consulter le fichier api-docs à la racine du projet. Ce fichier contient des informations détaillées sur chaque endpoint, y compris les méthodes HTTP, les paramètres acceptés, les réponses attendues, etc.
-
-N'hésitez pas à explorer les différents endpoints et à les tester à l'aide de Postman ou de tout autre outil de votre choix.
-
-Besoin d'aide supplémentaire ?
-Si vous avez des questions supplémentaires ou si vous rencontrez des problèmes lors de l'exécution de l'API en local, n'hésitez pas à consulter la documentation du projet ou à contacter l'équipe de développement pour obtenir de l'aide.
-
-Nous espérons que cette documentation vous sera utile et vous souhaitons une excellente expérience avec notre API locale !
