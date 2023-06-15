@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240605c"
+  },
+  "name": " Casse-têtes"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240605d"
+  },
+  "name": "Jeux de cartes"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240605e"
+  },
+  "name": "Jeux de plein air"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240605f"
+  },
+  "name": "Jeux musicaux"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406060"
+  },
+  "name": "Loisirs créatifs"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406061"
+  },
+  "name": "Jeux 1er âge"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406062"
+  },
+  "name": "Doudous"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406063"
+  },
+  "name": "Peluches"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406064"
+  },
+  "name": "Jeux éducatifs"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406065"
+  },
+  "name": "Livres éducatifs"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406066"
+  },
+  "name": "Jeux d’imitation"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406067"
+  },
+  "name": "Poupées"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406068"
+  },
+  "name": "Jeux d’imagination"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a42406069"
+  },
+  "name": "Jeux de construction"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240606a"
+  },
+  "name": "Jeux de société"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240606b"
+  },
+  "name": "Jeux vidéo"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240606c"
+  },
+  "name": "Puzzles"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240606d"
+  },
+  "name": "Livres"
+},{
+  "_id": {
+    "$oid": "637bc5cc85b7540a4240606e"
+  },
+  "name": "Autres"
+}]

@@ -1,0 +1,250 @@
+[{
+  "_id": {
+    "$oid": "63632f38a1243bcf77a82320"
+  },
+  "email": "Devonte.Emard@yahoo.com",
+  "firstname": "Emard",
+  "lastname": "Devonte",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Bordeaux",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667444536016"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667444536016"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63632f3ca1243bcf77a82324"
+  },
+  "email": "Catalina83@yahoo.com",
+  "firstname": "Osborne",
+  "lastname": "Catalina",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Bordeaux",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667444540963"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667444540963"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6366f544dd9ce034f52d5087"
+  },
+  "email": "Odell.Hilll@gmail.com",
+  "firstname": "Odell",
+  "lastname": "Hilll",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "West Robbieton",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667691844699"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667691844699"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6367346cea76b45e5ca80665"
+  },
+  "email": "Vida67@yahoo.com",
+  "firstname": "Rhiannon",
+  "lastname": "Vida",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Wilmamouth",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667708012969"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667708012969"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636734b29a2366735d74e489"
+  },
+  "email": "Kirk.Runolfsdottir@gmail.com",
+  "firstname": "Kirk",
+  "lastname": "Runolfsdottir",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Lakeville",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667708082502"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667708082502"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636882cba1eb22850d06c161"
+  },
+  "email": "Rosalee_Rath7@hotmail.com",
+  "firstname": "Rosalee",
+  "lastname": "Rath",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Port Angelo",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667793611838"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667793611838"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637592d0ed11030aea42ff5a"
+  },
+  "email": "Kristoffer72@hotmail.com",
+  "firstname": "Jonatan",
+  "lastname": "Kristoffer72",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Quebec",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668649680843"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668649680843"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6378e1f6b9528b16fc299330"
+  },
+  "email": "Thurman.Hauck59@yahoo.com",
+  "firstname": "Delphine",
+  "lastname": "Predovic",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Quebec",
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668866550514"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668976274006"
+    }
+  },
+  "__v": 0,
+  "isAdmin": false
+},{
+  "_id": {
+    "$oid": "637bfd56ccbc6c41f5a6e4c5"
+  },
+  "email": "admin@admin.com",
+  "firstname": "Admin",
+  "lastname": "Administrateur",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Bordeaux",
+  "isAdmin": true,
+  "cart": [
+    {
+      "$oid": "637d582c85b7540a4240622b"
+    },
+    {
+      "$oid": "637d582c85b7540a42406228"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669070166942"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671324423210"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63964885edc2b40a9675111d"
+  },
+  "email": "Hermina.Braun@gmail.com",
+  "firstname": "Kennith",
+  "lastname": "Legros",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Quebec",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670793349995"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670793349995"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639648a5edc2b40a9675111f"
+  },
+  "email": "Moriah29@gmail.com",
+  "firstname": "Mariana",
+  "lastname": "Bins",
+  "password": "$2a$12$KYismqsuR0klaY7wymVBTu.iOehN4AbQSZD8l1zBjebu5scIzLq3C",
+  "city": "Quebec",
+  "isAdmin": false,
+  "cart": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670793381480"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670793381480"
+    }
+  },
+  "__v": 0
+}]
