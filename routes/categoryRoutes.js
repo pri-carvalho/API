@@ -14,19 +14,19 @@ router.get('/:id', categoryController.getCategoryById);
 
 // Route POST pour créer une nouvelle catégorie
 // Utilise le middleware d'authentification pour vérifier si l'utilisateur est un administrateur
-//router.post('/', authenticationMiddleware.verifyAdmin, categoryController.createCategory);
-router.post('/', categoryController.createCategory);
+router.post('/', authenticationMiddleware.verifyAdmin, categoryController.createCategory);
+// router.post('/', categoryController.createCategory);
 
 
 // Route PUT pour mettre à jour une catégorie par son ID
 // Utilise le middleware d'authentification pour vérifier si l'utilisateur est un administrateur
-//router.put('/:id', authenticationMiddleware.verifyAdmin, categoryController.updateCategory);
-router.put('/:id', categoryController.updateCategory);
+router.put('/:id', authenticationMiddleware.verifyAdmin, categoryController.updateCategory);
+// router.put('/:id', categoryController.updateCategory);
 
 // Route DELETE pour supprimer une catégorie par son ID
 // Utilise le middleware d'authentification pour vérifier si l'utilisateur est un administrateur
-//router.delete('/:id', authenticationMiddleware.verifyAdmin, categoryController.deleteCategory);
-router.delete('/:id', categoryController.deleteCategory);
+router.delete('/:id', authenticationMiddleware.verifyAdmin, categoryController.deleteCategory);
+// router.delete('/:id', categoryController.deleteCategory);
 
 // Exportation de l'objet de routage
 module.exports = router;
