@@ -80,10 +80,106 @@ const deleteUser = async (req, res) => {
   }
 };
 
+// GET /profil
+// Obtient le profil de l'utilisateur courant
+const getCurrentUserProfile = async (req, res) => {
+  const userId = req.userId; // Obtient l'ID de l'utilisateur courant à partir du jeton d'authentification
+  
+  try {
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'Utilisateur introuvable' });
+    }
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: 'Échec de récupération du profil utilisateur' });
+  }
+};
+
+// GET /cart
+// Obtient le panier d'achat de l'utilisateur
+const getUserCart = async (req, res) => {
+  const userId = req.userId; // Supposons que l'ID de l'utilisateur est disponible dans l'objet de requête (req.userId)
+
+  try {
+    const user = await User.findById(userId).populate('cart.products');
+    if (!user) {
+      return res.status(404).json({ error: 'Utilisateur introuvable' });
+    }
+    res.json(user.cart);
+  } catch (error) {
+    res.status(500).json({ error: 'Échec de récupération du panier' });
+  }
+};
+
+// PUT /cart
+// Ajoute un article au panier d'un utilisateur
+const addToCart = async (req, res) => {
+  const userId = req.userId; // Supposons que l'ID de l'utilisateur soit disponible dans l'objet de requête (req.userId)
+  const { productId } = req.body; // Supposons que l'ID du produit soit fourni dans le corps de la requête
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ error: 'Utilisateur introuvable' });
+    }
+
+    // Vérifier si le produit est déjà dans le panier
+    const existingProduct = user.cart.products.find((product) => product.toString() === productId);
+
+    if (existingProduct) {
+      return res.status(400).json({ error: 'Le produit est déjà dans le panier' });
+    }
+
+    // Ajouter le produit au panier
+    user.cart.products.push(productId);
+    await user.save();
+
+    res.json(user.cart);
+  } catch (error) {
+    res.status(500).json({ error: 'Échec de l\'ajout au panier' });
+  }
+};
+
+// DELETE /cart/:id
+// Supprime un article du panier d'un utilisateur
+const removeFromCart = async (req, res) => {
+  const userId = req.userId; // Supposons que l'ID de l'utilisateur soit disponible dans l'objet de requête (req.userId)
+  const { id } = req.params; // Supposons que l'ID du produit à supprimer soit fourni en tant que paramètre dans l'URL
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ error: 'Utilisateur introuvable' });
+    }
+
+    // Vérifier si le produit est présent dans le panier
+    const productIndex = user.cart.products.findIndex((product) => product.toString() === id);
+
+    if (productIndex === -1) {
+      return res.status(404).json({ error: 'Produit introuvable dans le panier' });
+    }
+
+    // Supprimer le produit du panier
+    user.cart.products.splice(productIndex, 1);
+    await user.save();
+
+    res.json(user.cart);
+  } catch (error) {
+    res.status(500).json({ error: 'Échec de la suppression du panier' });
+  }
+};
+
 module.exports = {
   getUsers,
   getUserById,
   createUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  getCurrentUserProfile,
+  getUserCart,
+  addToCart,
+  removeFromCart
 };

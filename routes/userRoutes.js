@@ -11,39 +11,46 @@ const router = express.Router();
 router.get('/', userController.getUsers);
 
 // Route GET pour obtenir un utilisateur par son ID
-router.get('/:id', requireAuth, (req, res) => {
+/* router.get('/:id', requireAuth, (req, res) => {
   userController.getUserById(req, res);
-});
+}); */
+router.get('/:id', userController.getUserById);
 
 // Route GET pour obtenir le profil de l'utilisateur connecté
-router.get('/profil', requireAuth, (req, res) => {
+/* router.get('/profil', requireAuth, (req, res) => {
   userController.getCurrentUserProfile(req, res);
-});
+}); */
+router.get('/profil', userController.getCurrentUserProfile);
 
 // Route PUT pour mettre à jour un utilisateur par son ID
-router.put('/:id', requireAuth, (req, res) => {
+/* router.put('/:id', requireAuth, (req, res) => {
   userController.updateUser(req, res);
-});
+}); */
+router.put('/:id', userController.updateUser);
 
 // Route DELETE pour supprimer un utilisateur par son ID
-router.delete('/:id', requireAuth, (req, res) => {
+/* router.delete('/:id', requireAuth, (req, res) => {
   userController.deleteUser(req, res);
-});
+}); */
+router.delete('/:id', userController.deleteUser);
 
 // Route GET pour obtenir le panier de l'utilisateur
-router.get('/cart', requireAuth, (req, res) => {
+/* router.get('/cart', requireAuth, (req, res) => {
   userController.getUserCart(req, res);
-});
+}); */
+router.get('/cart', userController.getUserCart);
 
 // Route PUT pour ajouter un produit au panier de l'utilisateur
-router.put('/cart', requireAuth, (req, res) => {
+/* router.put('/cart', requireAuth, (req, res) => {
   userController.addToCart(req, res);
-});
+}); */
+router.put('/cart', userController.addToCart);
 
 // Route DELETE pour supprimer un produit du panier de l'utilisateur par son ID
-router.delete('/cart/:id', requireAuth, (req, res) => {
+/* router.delete('/cart/:id', requireAuth, (req, res) => {
   userController.removeFromCart(req, res);
-});
+}); */
+router.delete('/cart/:id',  userController.removeFromCart);
 
 // Route POST pour la connexion d'un utilisateur
 router.post('/login', (req, res) => {
