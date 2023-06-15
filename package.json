@@ -7,7 +7,7 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Priscila Carvalho",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -16,5 +16,13 @@
     "mongoose": "^7.2.3"
   },
   "devDependencies": {},
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pri-carvalho/API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pri-carvalho/API/issues"
+  },
+  "homepage": "https://github.com/pri-carvalho/API#readme"
 }

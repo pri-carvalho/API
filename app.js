@@ -17,7 +17,7 @@ app.use('/categories', categoryRoutes);
 
 // Route racine
 app.get('/', (req, res) => {
-  res.send('Bienvenue sur l\'API');
+  res.send('Bienvenue sur l\'API (Tp3-Priscila)');
 });
 
 // Connexion à la base de données
