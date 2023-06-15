@@ -1,26 +1,23 @@
 
-// Essas são funções auxiliares que você pode usar para validar campos, como emails, comprimentos mínimos e máximos de strings, entre outros.
-
-// Função para validar se uma string é um email válido
+// Fonction pour valider si une chaîne de caractères est une adresse e-mail valide
 const validateEmail = (email) => {
-    // Expressão regular para validar o formato de email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-  
-  // Função para validar se uma string possui um mínimo de caracteres
-  const validateMinLength = (value, minLength) => {
-    return value.length >= minLength;
-  };
-  
-  // Função para validar se uma string possui um máximo de caracteres
-  const validateMaxLength = (value, maxLength) => {
-    return value.length <= maxLength;
-  };
-  
-  module.exports = {
-    validateEmail,
-    validateMinLength,
-    validateMaxLength,
-  };
-  
+  // Expression régulière pour valider le format de l'e-mail
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
+// Fonction pour valider si une chaîne de caractères a une longueur minimale
+const validateMinLength = (value, minLength) => {
+  return value.length >= minLength;
+};
+
+// Fonction pour valider si une chaîne de caractères a une longueur maximale
+const validateMaxLength = (value, maxLength) => {
+  return value.length <= maxLength;
+};
+
+module.exports = {
+  validateEmail, 
+  validateMinLength, 
+  validateMaxLength, 
+};
