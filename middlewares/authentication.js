@@ -23,8 +23,8 @@ const requireAuth = async (req, res, next) => {
 
       // Vérifier si l'utilisateur existe
       if (user) {
-        req.user = user; // Stocker l'utilisateur dans l'objet de requête
-        next(); // Continuer vers la prochaine fonction de middleware
+        req.user = user; 
+        next(); 
       } else {
         throw new Error('Utilisateur non trouvé');
       }

@@ -48,5 +48,4 @@ module.exports = {
   verifyToken,
 };
 
-// Certifique-se de substituir 'sua_chave_secreta' pela chave secreta real que você deseja usar para assinar e verificar os tokens JWT. Lembre-se de manter essa chave em segredo e não compartilhá-la publicamente.
 

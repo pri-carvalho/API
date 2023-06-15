@@ -8,37 +8,31 @@ const router = express.Router();
 router.get('/', requireAuth, (req, res) => {
   userController.getUsers(req, res);
 }); 
-// router.get('/', userController.getUsers);
 
 // Route GET pour obtenir un utilisateur par son ID
 router.get('/:id', requireAuth, (req, res) => {
   userController.getUserById(req, res);
 });
-// router.get('/:id', userController.getUserById);
 
 // Route GET pour obtenir le profil de l'utilisateur connecté
 router.get('/profil', requireAuth, (req, res) => {
   userController.getCurrentUserProfile(req, res);
 });
-// router.get('/profil', userController.getCurrentUserProfile);
 
 // Route PUT pour mettre à jour un utilisateur par son ID
 router.put('/:id', requireAuth, (req, res) => {
   userController.updateUser(req, res);
 });
-// router.put('/:id', userController.updateUser);
 
 // Route DELETE pour supprimer un utilisateur par son ID
 router.delete('/:id', requireAuth, (req, res) => {
   userController.deleteUser(req, res);
 });
-// router.delete('/:id', userController.deleteUser);
 
 // Route GET pour obtenir le panier de l'utilisateur
 router.get('/cart', requireAuth, (req, res) => {
   userController.getUserCart(req, res);
 });
-// router.get('/cart', userController.getUserCart);
 
 // Route PUT pour ajouter un produit au panier de l'utilisateur
 router.put('/cart', requireAuth, (req, res) => {
