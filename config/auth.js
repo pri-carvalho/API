@@ -1,47 +1,45 @@
-
-
 const jwt = require('jsonwebtoken');
 
-// Função para gerar um token JWT
+// Fonction pour générer un token JWT
 const generateToken = (userId) => {
-  // Chave secreta para assinar o token
-  const secretKey = 'sua_chave_secreta';
+  // Clé secrète pour signer le token
+  const secretKey = 'votre_clé_secrète';
 
-  // Configurações do token
-  const expiresIn = '1h'; // Token expira em 1 hora
+  // Configuration du token
+  const expiresIn = '1h'; // Le token expire en 1 heure
 
-  // Dados a serem incluídos no token
+  // Données à inclure dans le token
   const payload = {
     userId: userId,
   };
 
-  // Gera o token com base nas configurações e na chave secreta
+  // Génère le token en utilisant les configurations et la clé secrète
   const token = jwt.sign(payload, secretKey, { expiresIn });
 
   return token;
 };
 
-// Middleware para verificar a autenticação do token
+// Middleware pour vérifier l'authentification du token
 const verifyToken = (req, res, next) => {
-  // Obtém o token do cabeçalho da requisição
+  // Obtient le token du header de la requête
   const token = req.headers.authorization;
 
-  // Verifica se o token está presente
+  // Vérifie si le token est présent
   if (!token) {
-    return res.status(401).json({ message: 'Token de autenticação não fornecido' });
+    return res.status(401).json({ message: 'Token d\'authentification non fourni' });
   }
 
   try {
-    // Verifica e decodifica o token usando a chave secreta
-    const decoded = jwt.verify(token, 'sua_chave_secreta');
+    // Vérifie et décode le token en utilisant la clé secrète
+    const decoded = jwt.verify(token, 'votre_clé_secrète');
 
-    // Adiciona o ID do usuário decodificado ao objeto da requisição
+    // Ajoute l'ID de l'utilisateur décodé à l'objet de la requête
     req.userId = decoded.userId;
 
-    // Chama o próximo middleware ou rota
+    // Appelle le prochain middleware ou la prochaine route
     next();
   } catch (error) {
-    return res.status(401).json({ message: 'Token de autenticação inválido' });
+    return res.status(401).json({ message: 'Token d\'authentification invalide' });
   }
 };
 
