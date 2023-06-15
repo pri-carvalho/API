@@ -1,4 +1,4 @@
-// Aqui está o código completo do arquivo helperFunctions.js:
+
 // Essas são funções auxiliares que você pode usar para validar campos, como emails, comprimentos mínimos e máximos de strings, entre outros.
 
 // Função para validar se uma string é um email válido

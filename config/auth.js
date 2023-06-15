@@ -1,4 +1,4 @@
-// Aqui está um exemplo básico de como você pode implementar o arquivo auth.js para lidar com a autenticação dos usuários usando tokens JWT (JSON Web Tokens):
+
 
 const jwt = require('jsonwebtoken');
 
@@ -52,4 +52,3 @@ module.exports = {
 
 // Certifique-se de substituir 'sua_chave_secreta' pela chave secreta real que você deseja usar para assinar e verificar os tokens JWT. Lembre-se de manter essa chave em segredo e não compartilhá-la publicamente.
 
-// Com esse arquivo auth.js, você pode gerar tokens JWT para autenticar seus usuários e proteger rotas específicas usando o middleware verifyToken.
