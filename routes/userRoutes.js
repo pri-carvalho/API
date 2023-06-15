@@ -5,9 +5,10 @@ const { requireAuth } = require('../middlewares/authentication');
 const router = express.Router();
 
 // Route GET pour récupérer tous les utilisateurs
-router.get('/', requireAuth, (req, res) => {
+/* router.get('/', requireAuth, (req, res) => {
   userController.getUsers(req, res);
-});
+}); */
+router.get('/', userController.getUsers);
 
 // Route GET pour obtenir un utilisateur par son ID
 router.get('/:id', requireAuth, (req, res) => {
